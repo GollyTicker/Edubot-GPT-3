@@ -22,7 +22,13 @@ gpt3options = {
 
 gpt3_details_options = {
   "max_tokens": 2,
+  "temperature": 0.95,
+}
+
+gpt3_topic_extraction = {
+  "max_tokens": 20,
   "temperature": 0.7,
+  "stop": "Q. ",
 }
 
 def main():
@@ -61,7 +67,29 @@ def main():
     print("Ended conversation.")
 
 def extract_topic_of_discussion(prompts):
-    return "Mars planet"
+    request = copy.deepcopy(prompts)
+    request.append("Q. What is the wikipedia page on this topic called?")
+    response = execute_gpt3_request(request, gpt3_topic_extraction, "Extracted Topic: ")
+    return extract_topic_from_response(response)
+
+def extract_topic_from_response(response):
+    logging.info("Extracting topic from " + response)
+    response = remove_prefix("E. ", response)
+    remove_suffix(".", response)
+    logging.info("Using extracted topic: " + response)
+    return response
+
+def remove_prefix(prefix, response):
+    if response[:len(prefix)] == prefix:
+        return response[len(prefix):]
+    else:
+        return response
+
+def remove_suffix(suffix, response):
+    if response[-len(suffix):] == suffix:
+        return response[:-len(suffix)]
+    else:
+        return response
 
 def add_wikipedia_summary_to_history(topic, summary, prompts):
     prompts.append("Q. What is " + topic+"?")
@@ -72,7 +100,6 @@ def get_wikipedia_summary(topic):
     try:
         logging.info("Requesting wikipedia for more details on: " + topic)
         result = wikipedia.summary(topic, sentences=7)
-        # logging.info("Wikipedia: " + result)
         return result
     except e:
         logging.exception("Encountered an error during wikipedia API for topic:" + topic)
@@ -99,10 +126,8 @@ def to_multiline_string(prompts):
     return "\n".join(prompts)
 
 def clean_newlines(response):
-    if response[:1] == "\n":
-        response = response[1:]
-    if response[-1:] == "\n":
-        response = response[:-1]
+    response = remove_prefix("\n", response)
+    response = remove_suffix("\n", response)
     return response
 
 if __name__ == "__main__":
