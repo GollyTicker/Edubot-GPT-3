@@ -27,6 +27,9 @@ def clean_newlines(response):
         response = response[:-1]
     return response
 
+def question_is_detailed(question):
+    return False
+
 print("Ask a question or a topic you are interested to learn about. (Write . to quit.)")
 while True:
     print("Q. ", end = "")
@@ -35,11 +38,19 @@ while True:
         break
     prompts.append("Q. " + question)
 
-    response_object = openai.Completion.create(engine="davinci", prompt=to_multiline_string(prompts), **gpt3options)
+    response = ""
+    if question_is_detailed(question):
+        # do wikipedia stuff....
+        response = "some response"
 
-    logging.info(f"Response: {json.dumps(response_object,indent=2)}")
+    else:
+        response_object = openai.Completion.create(engine="davinci", prompt=to_multiline_string(prompts), **gpt3options)
 
-    response = clean_newlines(response_object["choices"][0]["text"])
+        logging.info(f"Response: {json.dumps(response_object,indent=2)}")
+
+        response = clean_newlines(response_object["choices"][0]["text"])
+
+    # display response
     print(response)
     prompts.append(response)
 
