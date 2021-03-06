@@ -1,4 +1,4 @@
-init = [
+array = [
   "Q. Can you explain me how a computer works?",
   "E. A computer is a large digital circuit that follows certain logic and is programmed to execute tasks.",
   "Q. What do you mean by \"programmed\"?",
