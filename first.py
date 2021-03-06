@@ -18,7 +18,7 @@ gpt3options = {
 }
 
 def to_multiline_string(prompts):
-    return "\n".join([p for p in prompts])
+    return "\n".join(prompts)
 
 def clean_newlines(response):
     if response[:1] == "\n":
@@ -47,5 +47,7 @@ while True:
     if len(prompts) > 2 * 4:
         prompts.pop(0)
         prompts.pop(0)
+
+    logging.info("Prompts: \n" + '  \n'.join(prompts))
 
 print("Ended conversation.")
