@@ -50,7 +50,7 @@ def main():
             if summary is not None:
                 add_wikipedia_summary_to_history(topic, summary, prompts)
             else:
-                logging.info("Summary was empty. Not ignoring wikipedia.")
+                logging.info("No summary could be found. Ignoring wikipedia.")
 
         prompts.append("Q. " + question)
         response = execute_gpt3_request(prompts, gpt3options, "Response")
@@ -105,7 +105,7 @@ def get_wikipedia_summary(topic):
         logging.info("Requesting wikipedia for more details on: " + topic)
         result = wikipedia.summary(topic, sentences=7)
         return result
-    except e:
+    except:
         logging.exception("Encountered an error during wikipedia API for topic:" + topic)
         return None
 
