@@ -6,6 +6,8 @@ import json
 import copy
 import wikipedia
 
+MAXIMUM_NUMBER_OF_QUESTION_ANSWER_PAIRS = 4
+
 logging.basicConfig(filename='first.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 with open('.key', 'r') as file:
@@ -42,7 +44,7 @@ def main():
 
         response = ""
         if question_is_detailed(question):
-            topic = extract_topic_of_discussion(prompts) # exclude last question
+            topic = extract_topic_of_discussion(prompts)
             summary = get_wikipedia_summary(topic)
 
             if summary is not None:
@@ -57,14 +59,16 @@ def main():
         print(response)
         prompts.append(response)
 
-        # remove oldest question answer pair
-        while len(prompts) > 2 * 4:
-            prompts.pop(0)
-            prompts.pop(0)
+        ensure_history_is_truncated(prompts)
 
         logging.info("Prompts: \n" + '  \n'.join(prompts))
 
     print("Ended conversation.")
+
+def ensure_history_is_truncated(prompts):
+    while len(prompts) > 2 * MAXIMUM_NUMBER_OF_QUESTION_ANSWER_PAIRS:
+        prompts.pop(0)
+        prompts.pop(0)
 
 def extract_topic_of_discussion(prompts):
     request = copy.deepcopy(prompts)
