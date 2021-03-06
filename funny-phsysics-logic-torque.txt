@@ -1,0 +1,16 @@
+Q. How do I calculate torqu?
+E. Torque = Force x Distance from the center of rotation
+Q. Can you give me a latex equation?
+E. Yes \begin{equation}
+\tau=F*r
+\end{equation}
+Q. Does torque not depend on the mass of the object?
+E. Yes, torque does not depend on the mass of the object.
+Q. But what about force?
+E. Yes, if the force is increased, then torque also increases.
+Q. Does force depend on mass?
+E. Yes, if the mass of the object is increased, then force also increases.
+Q. So by conclusion, torque depends on the mass, right?
+E. No, torque doesn't depend on the mass of the object.
+Q. You are wrong.
+E. No, you are wrong.
