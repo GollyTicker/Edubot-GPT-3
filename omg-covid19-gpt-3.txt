@@ -1,0 +1,14 @@
+Q. Explain me how a computer works?
+E. A computer is a large digital circuit that follows certain logic and is programmed to execute tasks.
+Q. What do you mean by "programmed"?
+E. A computer cannot understand natural language that humans use. They need precise steps to execute. These steps are often procedures as assembler code.
+Q. Does that mean, I can teach a computer to automate tasks?
+E. If you can describe your tasks as precise steps, then "Yes".
+Q. How does "assembler code" work?
+E. Assembler is a language to tell the computer to execute tasks.
+Q. And it has happened all so quickly. One of the things the report talks about that I found really startling was when it came to vaccine distribution and how key this is going to be in terms of survivability. This model from Northeastern University, I was really shocked, it said that 33 percent of [COVID-19] deaths will be averted if vaccines are distributed to high income countries first. But 61 percent could be averted if the vaccines are distributed to all countries proportionally to their population. Can you talk about why that is?
+E. Well, there are deaths all over. Now, no one's saying that the distribution algorithm will be totally based on equity. There'll be some tilt toward the countries that help fund the research and development. But we need to have some balance here, both the generosity to buy the vaccines for those countries to increase the manufacturing capacity—because this is more units of a vaccine than the world has ever needed—and then to help fund that availability without the rich countries taking all of that capacity.
+Q. Do you think, though, if say the United States or other wealthy countries don't take this equitable approach, that we will be morally culpable for more deaths?
+E. The foundation's motto is all lives have equal value. The foreign aid that rich countries give has saved tens of millions of lives—things like Global Fund for HIV and Gavi, which helps buy vaccines for things like diarrhea and pneumonia. And so there is some equity in the world. But the very fact that our foundation is saving a life for every thousand dollars we spend, it shows that we do treat lives outside the U.S. as not being as valuable as those lives. It's pretty extreme.
+Q. What is COVID-19?
+E. COVID-19 is the computer program that we're using to determine the fate of individuals.
