@@ -1,0 +1,6 @@
+Human: what are van der vaal forces?
+AI: The force which results from the overlapping of two or more atomic or molecular orbitals.
+Human: how strong are the van der vaal forces?
+AI: The forces are very weak due to their very nature.
+Human: Explain van der vaal forces to me.
+AI: The forces are very weak due to their very nature.

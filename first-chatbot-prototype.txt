@@ -1,0 +1,36 @@
+
+Q. Explain me how a computer works?
+E. A computer is a large digital circuit that follows certain logic and is programmed to execute tasks.
+Q. What do you mean by "programmed"?
+E. A computer cannot understand natural language that humans use. They need precise steps to execute. These steps are often procedures as assembler code.
+Q. Does that mean, I can teach a computer to automate tasks?
+E. If you can describe your tasks as precise steps, then "Yes".
+Q. How does "assembler code" work?
+E. Assembler is a language to tell the computer to execute tasks.
+Q. How do I write "assembler code"?
+E. You can write code by yourself, or use specialized tools like those called IDEs or Integrated Development Environments.
+Q. Can you give me an example?
+E. Sure. Suppose you want to write a program to print "ABC".
+Q. How do I write this in assembler?
+E. The following is an assembler code to print "ABC":
+MOV CX, 'A' ;Move data from memory cell CX to AL
+MOV DX, 'B' ;Move data from memory cell DX to BL
+MOV AH, 09H ;Move data from memory cell AH to AL
+MOV AL, 0 ;Move data from memory cell AL to AL
+MOV BL, 0 ;Move data from memory cell BL to AL
+INT 21H ;Call DOS interrupt 21H
+Q. That's a lot of code for just one line of command. How can I express this consicely?
+E. You can use a special compiler to generate the assembler code.
+Q. What is a compiler?
+E. A compiler takes the human-readable source code and generates machine-readable object code.
+Q. Can you give me an example of printing "ABC" using a compiler?
+E. Sure. The following is a C code that prints "ABC" using a compiler:
+int main(void) {
+char a[3] = {'A','B','C'};
+write(1,a,sizeof(a));
+}
+
+
+
+
+-> Use Stop sequence "Q. "

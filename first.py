@@ -39,6 +39,7 @@ def main():
     while True:
         print("Q. ", end = "")
         question = input()
+        print("")
         if question in [".",""]:
             break
 
@@ -56,7 +57,7 @@ def main():
         response = execute_gpt3_request(prompts, gpt3options, "Response")
 
         # display response
-        print(response)
+        print(response, end = "\n\n")
         prompts.append(response)
 
         ensure_history_is_truncated(prompts)
