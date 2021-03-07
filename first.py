@@ -17,7 +17,7 @@ question = 0
 prompts = init.array
 
 gpt3options = {
-  "max_tokens": 200,
+  "max_tokens": 600,
   "temperature": 0.7,
   "stop": "Q. ",
 }
