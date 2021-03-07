@@ -14,6 +14,7 @@ TODOs:
     . Q. Can you tell me more about it? -> continues at a random place, because invisible question from wikipedia is appended to history.
     . Make sure only the wikipedia summary is used - while at the same time having a limit on the number of tokens used at input for gpt
     . when the past few questions answers get too long -> shorten them appropiately
+    . investigate using cheaper weaker faster engines (curie, ... , ada) instead
 . visibility
     . cleanup repository
     . add simple web-interface that is only partially availible
