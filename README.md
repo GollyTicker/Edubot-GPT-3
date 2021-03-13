@@ -1,4 +1,5 @@
-# GPT-3-Hackathon Educational Chatbot
+# EduBot
+An educational chatbot based on GPT-3 created during a hackathon.
 
 Developers: Swaneet, Adwait, Sara
 
