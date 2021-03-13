@@ -6,21 +6,6 @@ import json
 import copy
 import wikipedia
 
-
-todos = """
-TODOs:
-. note to self: presentation, brianstorming etc. can be found on Google Drive of swaneet2
-. clean rough edges:
-    . Q. Can you tell me more about it? -> continues at a random place, because invisible question from wikipedia is appended to history.
-    . Make sure only the wikipedia summary is used - while at the same time having a limit on the number of tokens used at input for gpt
-    . when the past few questions answers get too long -> shorten them appropiately
-    . investigate using cheaper weaker faster engines (curie, ... , ada) instead
-. visibility
-    . cleanup repository
-    . add simple web-interface that is only partially availible
-. improvements
-"""
-
 MAXIMUM_NUMBER_OF_QUESTION_ANSWER_PAIRS = 4
 
 logging.basicConfig(filename='first.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s', level=logging.INFO)
@@ -152,3 +137,15 @@ def clean_newlines(response):
 
 if __name__ == "__main__":
     main()
+
+todos = """
+TODOs:
+. clean rough edges:
+    . Q. Can you tell me more about it? -> continues at a random place, because invisible question from wikipedia is appended to history.
+    . Make sure only the wikipedia summary is used - while at the same time having a limit on the number of tokens used at input for gpt
+    . when the past few questions answers get too long -> shorten them appropiately
+    . investigate using cheaper weaker faster engines (curie, ... , ada) instead
+. visibility
+    . add simple web-interface that is only partially availible
+. improvements
+"""
