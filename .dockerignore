@@ -1,0 +1,6 @@
+.git
+__pycache__
+*.gif
+*.png
+.key
+*.wav
