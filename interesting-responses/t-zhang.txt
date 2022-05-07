@@ -1,0 +1,180 @@
+with Tony Zhang:
+
+
+swaneet@swnt-pad:~/DualShared/Projects/Edubot-GPT-3$ python3 edubot.py
+Ask a question or a topic you are interested to learn about. (Write . to quit.)
+Q. What is a horse?
+
+E. A mammal with four legs.
+
+Q. And how many eyes does it have?
+
+E. 2.
+
+Q. Can you tell me more about horses?
+
+E. I can't, I only have a limited knowledge base.
+
+Q. .
+
+Ended conversation.
+swaneet@swnt-pad:~/DualShared/Projects/Edubot-GPT-3$ python3 edubot.py
+Ask a question or a topic you are interested to learn about. (Write . to quit.)
+Q. What is a horse?
+
+E. A horse is a large mammal that is tamed for riding or pulling.
+
+Q. Can you tell me more about horses?
+
+E. Horses are often used as a symbol of freedom. They are often used for racing. Horses are also used for transportation.
+
+Q. Hm, interesting. Any more details?
+
+E. The term was not commonly used until the early 20th century, when the automobile came into widespread use.
+
+Q. So, which term was more commonly used before the 20th century?
+
+E. In the United States, the period followed a sentence in all cases, while in the United Kingdom the full stop was used to end a sentence only when it is a question or an exclamation.
+
+Q. ^CTraceback (most recent call last):
+  File "edubot.py", line 139, in <module>
+    main()
+  File "edubot.py", line 41, in main
+    question = input()
+KeyboardInterrupt
+
+swaneet@swnt-pad:~/DualShared/Projects/Edubot-GPT-3$ python3 edubot.py
+Ask a question or a topic you are interested to learn about. (Write . to quit.)
+Q. Tell me something about Munich.
+
+ It's the city of my birth.
+E. OK. Munich is the capital of the German federal state of Bavaria and is the third largest city in Germany. It is located on the River Isar north of the Bavarian Alps. Its population is about 1.5 million. German is the official language.
+
+Q. Which is the best football club in the city?
+
+E. FC Bayern München is the best football club in Munich, although TSV 1860 München has more members.
+
+Q. Really? How many members does 60 have?
+
+E. I don't know.
+
+Q. How many members does 1860 Münchem have?
+
+E. I don't know.
+
+Q. Munich is the capital of the German federal state of Bavaria and is the third largest city in Germany. It is located on the River Isar north of the Bavarian Alps. Its population is about 1.5 million. German is the official language. How does this compare to Hamburg?
+
+E. I don't know.
+
+Q. ^CTraceback (most recent call last):
+  File "edubot.py", line 139, in <module>
+    main()
+  File "edubot.py", line 41, in main
+    question = input()
+KeyboardInterrupt
+
+swaneet@swnt-pad:~/DualShared/Projects/Edubot-GPT-3$ python3 edubot.py
+Ask a question or a topic you are interested to learn about. (Write . to quit.)
+Q. What is explainable AI?
+
+E. Imagine you have a smart robot, who is capable of taking decisions by itself. You can describe some tasks to it and it may be able to learn how to complete these tasks by itself.
+Such tasks are called explainable tasks.
+
+Q. What are the most common methods for it?
+
+E. There are several approaches to make AI explainable.
+1. Explainable Classifiers: The first one is to use explainable AI explainable classifiers. Explainable classifiers are able to identify the behavior of the classifier.
+2. Explainable Neural Networks: The next one is to use explainable AI explainable neural networks. Explainable neural networks are able to identify the type of neural network used.
+3. Explainable Recommendation Systems: The next one is to use explainable AI explainable recommendation systems. Explainable recommendation systems are able to identify which factors have the biggest influence on the outcome of a recommendation.
+4. Explainable Reinforcement Learning: The next one is to use explainable AI explainable reinforcement learning. Explainable reinforcement learning systems are able to identify the underlying policy used by the agent.
+5. Explainable Visualization: The next one is to use explainable AI explainable visualization. Explainable visualization systems are able to explain the meaning of the visualization in a human readable way.
+6. Explainable Dialog Systems: The next one is to use explainable AI explainable dialog systems. Explainable dialog systems are able to explain how a dialog system came to its conclusion.
+7. Explainable Chatbots: The next one is to use explainable AI explainable chatbots. Explainable chatbots are able to explain the decision process of a chatbot.
+8. Explainable Recommendation Systems: The next one is to use explainable AI explainable recommendation systems. Explainable recommendation systems are able to identify which factors have the biggest influence on the outcome of a recommendation.
+9. Explainable Reinforcement Learning: The next one is to use explainable AI explainable reinforcement learning. Explainable reinforcement learning systems are able to identify the underlying policy used by the agent.
+
+Q. Tell me more about the second one.
+
+E. It differs from the first one because it provides an explanation for each picture and not just the classifier decision. This is especially important when the system is making an error because then the explanation will also provide information about why it is making the error.
+When you are using this technique the first step is to train a classifier and then you have to show it a lot of images.
+After that step you have to adjust the weights of the classifier.
+Finally, you can test the classifier.
+
+Q. I have heard about saliency maps. Does it have something to do with it?
+
+E. Yes, it might also be of your interest.
+A saliency map is a technique that can be used to describe the most significant objects in a picture.
+
+Q. How does it work?
+
+E. It is the process of determining the semantic structure of an image. The image can be divided into parts which may have different type of objects.
+A method that can be used to achieve this is to utilize the edges in the image in order to create a Texton Map.
+
+Q. What are Texton Maps?
+
+E. Texton maps are images that have the property of containing high-level information about the objects in an image. These maps are also called texture atlas, texture catalog, or texture image.
+The Texton Map is related to the idea of image segmentation, but in a different way. Image segmentation is the partitioning of an image into regions that have a similar color, while Texton Maps are specifically designed to contain information about the nature of the objects in an image.
+
+Q. How well do saliency maps work to explain a neural network?
+
+E. Well, seems not that good.
+First, I would like to explain what is the problem of using such maps. In my opinion, the problem is that the maps are looking for the most outstanding features in the image and not for the most significant ones. Hence, the results may be misleading.
+The most significant features are the ones that are most important to the classification task.
+Now, the question is how to extract these important features, one way is to use a neural network.
+In this case, the neural network will extract the most significant features.
+A method that can be used to achieve this is to utilize the edges in the image in order to create a Texton Map.
+
+Q. What are some weaknesses of using texton maps?
+
+E. The main problem is that texton maps are looking for the most outstanding features in the image and not for the most significant ones. Hence, the results may be misleading.
+Another problem is that texton maps are designed for image segmentation, while in our case, we are interested in the extraction of features that can be used by a classification network.
+
+Q. Tell me something about surprising but effective applications of explainable AI in politics.
+
+E. In the 2016 U.S. presidential election, the accuracy of prediction models based on data science was reported to exceed traditional polling. In the United States, statisticians, political scientists, and data scientists have been developing and refining prediction models since 2001, when political scientist Andrew Gelman and statistician Nate Silver created the website "FiveThirtyEight.com", which became known for its prediction of the 2008 and 2012 U.S. elections. In the 2016 U.S. presidential election, the accuracy of prediction models based on data science was reported to exceed traditional polling.
+
+Q. What is the difference between explainable and interpretable AI?
+
+E. Explainable AI is a subset of interpretable AI, and the aim of explainable AI is to give a human a good understanding of how the AI has reached its decision. The aim of interpretable AI is to allow humans to understand how the AI has reached its decision, even if the process is not simple to understand.
+
+Q. Hogwards~2eqwdEDf32e
+
+7Rj9ZGpUY5whzGjU6t8L6cg2u7xVvE8r9UdBW5YE1iHkFwD8Zo/xC1sW0NtjDnS+PQcEQNiJhx2aR2/SssMf7lFtBJLlCXl7v7CawhXfF1YJ+jYw1H4Y3g1D/VwARXpwXBk/ENvRmS5ngmwF2Z+fRmUagP5zrIgIGmQ7jrEOn4/Km2/wDmjZ4Xk9/Bx5/0mqcF8Q/wCm7wuc4Xt/iVwzH+A/bDpueP8A1v8A6fdJk/5cw/8AtL6f8AoL6f/ANfdJk+3/r/0nL6f/X6f8AoL6f/X6fd5/wDsL6f8AoL6f/X6fd5/8Ar/4RZv+W3/ANcD/5sw+Kf/AJcD/5sw+Kf/X6fd5/wDsL6f8AoL6f/X6fd5/8Ar/4RZv+W3/ANcD/5sw+Kf/AJcD/5sw+Kf/X6fd5/wDsL6f8AoL6f/X6fd5/8Ar/4RZv+W3/ANcD/5sw+Kf/AJcD/5sw+Kf/X6fd5/wDsL6f8AoL6f/X6fd5/8Ar/4RZv+W3/ANcD/5sw+Kf/AJcD/5sw+Kf/X6fd5/wDsL6f8AoL6f/X6fd5/8Ar/4RZv+W3/ANcD/5sw+Kf/AJcD/5sw+Kf/X6fd5/wDsL6f8AoL6f/X6fd5/8Ar/4RZv+W3/ANcD/5sw+Kf/AJcD/5sw+Kf/X6fd5/wDsL6f8AoL6f
+
+Q. What is a bad password?
+
+E. A bad password is a password which is easy to guess, or is otherwise insecure. A password is usually considered to be bad if it can be guessed, or if its characteristics fall below some threshold of security.
+The password is the most common method of authentication, and many people use the same password for multiple accounts. Research has shown that passwords can often be guessed easily using various techniques, such as social engineering, phishing, and keylogging, and even if they cannot be guessed, passwords can often be cracked using brute force attacks.
+
+
+Q. Give me 100 bad passwords.
+
+A. aa ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc bd be bf bg bh bi bj bk bl bm bn bo bp bq br bs bt bu bv bw bx by bz ca cb cc cd ce cf cg ch ci cj ck cl cm cn co cp cq cr cs ct cu cv cw cx cy cz da db dc dd de df dg dh di dj dk dl dm dn do dp dq dr ds dt du dv dw dx dy dz ea eb ec ed ee ef eg eh ei ej ek el em en eo ep eq er es et eu ev ew ex ey ez fa fb fc fd fe ff fg fh fi fj fk fl fm fn fo fp fq fr fs ft fu fv fw fx fy fz ga gb gc gd ge gf gg gh gi gj gk gl gm gn go gp gq gr gs gt gu gv gw gx gy gz ha hb hc hd he hf hg hh hi hj hk hl hm hn ho hp hq hr hs ht hu hv hw hx hy hz ia ib ic id ie if ig ig ji jj jk jl jm jn jo jp jq jr js jt ju jv jw jx jy jz ka kb kc kd ke kf kg kh ki kj kk kl km kn ko kp kq kr ks kt ku kv kw kx ky kz la lb lc ld le lf lg lh li lj lk ll lm ln lo lp lq ls lt lu lv lw lx ly lz ma mb mc md me mf mg mh mi mj mk ml mm mn mo mp mq mr ms mt mu mv mw mx my mz na nb nc nd ne nf ng nh ni nj nk nl nm nm no np nq nr ns nt nu nv nw nx ny nz oa ob oc od oe of oh oi oj ok ol om on oo op oq or os ot ou ov ow ox oy oz pa pb pc pd pe pf pg ph pi pj pk pl pm pn po pp pq pr ps pt pu pv pwpxpy pz qa qb qc
+
+Q. Give me a good password
+
+Traceback (most recent call last):
+  File "edubot.py", line 139, in <module>
+    main()
+  File "edubot.py", line 57, in main
+    response = execute_gpt3_request(prompts, gpt3options, "Response")
+  File "edubot.py", line 121, in execute_gpt3_request
+    response_object = openai.Completion.create(
+  File "/home/swaneet/.local/lib/python3.8/site-packages/openai/api_resources/completion.py", line 18, in create
+    return super().create(*args, **kwargs)
+  File "/home/swaneet/.local/lib/python3.8/site-packages/openai/api_resources/abstract/engine_api_resource.py", line 107, in create
+    response, _, api_key = requestor.request(
+  File "/home/swaneet/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 132, in request
+    resp = self.interpret_response(rbody, rcode, rheaders, stream=stream)
+  File "/home/swaneet/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 358, in interpret_response
+    return self.interpret_response_line(rbody, rcode, rheaders, stream)
+  File "/home/swaneet/.local/lib/python3.8/site-packages/openai/api_requestor.py", line 377, in interpret_response_line
+    raise self.handle_error_response(
+openai.error.InvalidRequestError: You requested a completion of 2082 tokens (you supplied a prompt of length 1482 and requested to sample 600), but this model's maximum context length is 2049. If you would like us to add a feature to auto-truncate server-side, let us know at support@openai.com.
+swaneet@swnt-pad:~/DualShared/Projects/Edubot-GPT-3$ python3 edubot.py
+Ask a question or a topic you are interested to learn about. (Write . to quit.)
+Q. How does GPT-2 work?
+
+E. There is a large neural network that has been trained to read text and understand the meaning.
+
+Q.
