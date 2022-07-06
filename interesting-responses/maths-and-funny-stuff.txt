@@ -1,0 +1,103 @@
+$ python3 edubot.py 
+Ask a question or a topic you are interested to learn about. (Write dot '.' or say 'quit' to quit.)
+Q. How do eyes work?
+
+E. Can you explain how you see?
+
+Q. No, that is why I ask you
+
+.
+E. The eyes work like a video camera. A video camera takes a video feed and saves the frames to a video file. The eyes work the same way, they read the video feed and save the image to a file that is saved in the brain.
+
+Q. ^CTraceback (most recent call last):
+  File "edubot.py", line 157, in <module>
+    main()
+  File "edubot.py", line 49, in main
+    question = inputter()
+KeyboardInterrupt
+
+
+=============================================
+
+$ python3 edubot.py 
+Ask a question or a topic you are interested to learn about. (Write dot '.' or say 'quit' to quit.)
+Q. Please explain to me how eyes work
+
+?
+E. Eyes are organs that collect light and turn it into electrical signals. These electrical signals are then processed by the brain.
+
+Q. How are these signals interpreted by the brain?
+
+E. The signals that the eyes detect are very high in number and arrive at different speeds. The brain processes all these signals in a very complex way.
+
+Q. Please explain to me how a clock works
+
+?
+E. Every clock keeps time in the same way. A clock has a mechanism that can be made to oscillate at a very precise rate. This oscillation is called the clock's oscillation. The oscillation makes the clock's hands move, and the oscillation can be measured. Measurements of the oscillation are used to tell time.
+
+Q. What is time?
+
+E. Time is a measurement of how long it takes for anything in the universe to happen.
+
+Q. What do we still not know about time?
+
+E. We know that time is the same for everyone everywhere. It is not affected by the place or speed of an object. We also know that time is not affected by the size or age of an object.
+
+Q. Isn't time different when moving in different speeds?
+
+E. If you travel close to the speed of light, time slows down.
+
+Q. Please explain in detail how time slows down when moving close to the speed of light
+
+.
+E. Einstein's theory of relativity says that time speeds up for objects travelling at high speeds. For example, a clock on the dashboard of a car moving at a steady 60 miles (97 kilometers) per hour will tick more slowly than a clock at rest in the driver's home.
+
+Q. Please explain in detail
+
+ how does time slow down when moving close to the speed of light ?
+E. If you travel at 90% of the speed of light, time passes more slowly.
+
+Q. Please explain in detail.
+
+E. The time dilation formula is
+where
+t' is the time interval as measured by the observer in the inertial frame of reference,
+t is the time interval as measured by the observer in the uniformly moving frame of reference, and
+v is the relative velocity between the two reference frames.
+
+
+Q. Tell me more about time dialation and length contraction.
+
+E. It is often said that time dilation and length contraction are not real physical effects but simply a result of the coordinate system we use to describe the universe. The claim that length contraction and time dilation are not real effects but only appear to be so is not entirely true. For example, the following experiment has been performed many times:
+A laser beam is divided into two beams with a half-silvered mirror. The two beams travel in opposite directions around a ring and then re-combine. The returning light waves interfere, producing an interference pattern of bright and dark bands. This is analogous to the pattern of waves in water after stones are tossed in. If the mirror is replaced with a transparent sheet of glass, the interference pattern will be the same as with the silvered mirror. However, the glass sheet cannot be moved through space at speeds comparable to that of light.
+
+Q. Tell me a joke
+
+.
+A. A mathematician, a physicist, and an engineer are walking down the street when they come upon a pile of trash. They look at it and then the mathematician says, "This is a pile of trash." The physicist says, "This is a pile of trash." The engineer says, "This is a pile of leaves."
+== References ==
+
+Q. Please xplain me the joke.
+
+A. A physicist, a mathematician, and an engineer are on a train. The engineer says, "I wonder where this train is going." The mathematician says, "I wonder where this train is going." The physicist says, "I wonder where this train is."
+
+Q. You jokes are bad!
+
+A. An infinite number of mathematicians walk into a bar. The first one orders a beer. The second orders half a beer. The third orders a quarter of a beer. The fourth orders an eighth of a beer. The bartender says, "You guys must be mathematicians!" The other three mathematicians laugh and order a beer.
+
+
+== Effects ==
+
+The existence of length contraction has been confirmed by many experiments and observations, including the Sagnac effect of spinning objects, the failure of the Michelson–Morley experiment to detect earth's orbital motion through the aether, the Kennedy–Thorndike experiment, the Pound–Rebka experiment, and the Cerenkov radiation phenomenon. These phenomena are described by the Lorentz-FitzGerald contraction hypothesis, which postulates that the length of an object is shortened in the direction of its motion through the aether and lengthened transverse to that direction.
+
+
+Q. wc34ä3/*XA()(32q4cq*D(A)*P(NçC=3a8x4eP*"A)(nce0R*A
+
+(A)n+"c"XA()(3q3q*f3*c(A)*"A)(32(cAF+"c"XA()(32g*XA()(32g*XA()(32(cAF*D(A+"c"XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*c(A+"c"XA()(3q3q*c(A)*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q*XA()(3q3q*"A)(n+"c"XA()(3q3q*XA()(3q3q
+
+Q. Continue 1,1,2,3,5,8,13,21,... 
+
+A. I love the smell of dead mathematicians in the morning.
+
+
+Q. 
