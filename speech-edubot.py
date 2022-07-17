@@ -1,12 +1,13 @@
-import subprocess
+from pathlib import Path
+import os
 import edubot
 import simpleaudio as sa
 from string_operations import remove_prefix
 from itertools import dropwhile
+from pathlib import Path
+import text_to_speech
 
-output_sequence = []
-
-# Test prompt: Explain me in detail how a computer works.
+# Test prompt: Explain me in very detail how a computer works.
 
 
 def speak_to_user(*args, **kwargs):
@@ -15,23 +16,22 @@ def speak_to_user(*args, **kwargs):
 
     print(f"{text}", end=f"{lineEnding}")
 
-    output_sequence.append(text)
-
     edubot_response_suffix = find_edubot_response_suffix(text)
 
     if edubot_response_suffix != "":
-        print("  >> tts-ing", '"' + edubot_response_suffix + '"')
         convert_to_speech_sequence(edubot_response_suffix)
-        print("  >> tts-ing ✅")
 
 
 def convert_to_speech_sequence(text):
     # convert each line separately, because otherwise the TTS takes too long before the first result
     lines = text.split("\n")
 
+    os.system("rm -f output/response-*.wav")
     for i, line in enumerate(lines):
-        output_file = f"output/response-{i}.wav"
-        subprocess.run(["tts", "--out_path", output_file, "--text", line])
+        print("  >> tts-ing", '"' + line + '"')
+        text_to_speech.convert(line, f"output/response-{i}.wav")
+
+    print("  >> tts-ing ✅")
 
 
 # find everything after the "E. " in the textual response
