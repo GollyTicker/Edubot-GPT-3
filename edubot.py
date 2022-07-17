@@ -5,6 +5,7 @@ import details
 import json
 import copy
 import wikipedia
+from string_operations import remove_prefix, remove_suffix
 
 MAXIMUM_NUMBER_OF_QUESTION_ANSWER_PAIRS = 4
 
@@ -20,6 +21,10 @@ with open(".key", "r") as file:
 
 question = 0
 prompts = init.array
+
+WELCOME_STATEMENT = "Ask a question or a topic you are interested to learn about. (Write dot '.' or say 'quit' to quit.)"
+QUESTION_PREFIX = "Q. "
+EXPLANATION_PREFIX = "E. "
 
 gpt3options = {
     "max_tokens": 600,
@@ -40,12 +45,10 @@ gpt3_topic_extraction = {
 
 
 def main(printer=print, inputter=input):
-    printer(
-        "Ask a question or a topic you are interested to learn about. (Write dot '.' or say 'quit' to quit.)"
-    )
+    printer(WELCOME_STATEMENT)
 
     while True:
-        printer("Q. ", end="")
+        printer(QUESTION_PREFIX, end="")
         question = inputter()
         printer("")
         if question in [".", ""]:
@@ -61,7 +64,7 @@ def main(printer=print, inputter=input):
             else:
                 logging.info("No summary could be found. Ignoring wikipedia.")
 
-        prompts.append("Q. " + question)
+        prompts.append(QUESTION_PREFIX + question)
         response = execute_gpt3_request(prompts, gpt3options, "Response")
 
         # display response
@@ -90,29 +93,15 @@ def extract_topic_of_discussion(prompts):
 
 def extract_topic_from_response(response):
     logging.info("Extracting topic from " + response)
-    response = remove_prefix("E. ", response)
+    response = remove_prefix(EXPLANATION_PREFIX, response)
     response = remove_suffix(".", response)
     logging.info("Using extracted topic: " + response)
     return response
 
 
-def remove_prefix(prefix, response):
-    if response[: len(prefix)] == prefix:
-        return response[len(prefix) :]
-    else:
-        return response
-
-
-def remove_suffix(suffix, response):
-    if response[-len(suffix) :] == suffix:
-        return response[: -len(suffix)]
-    else:
-        return response
-
-
 def add_wikipedia_summary_to_history(topic, summary, prompts):
-    prompts.append("Q. What is " + topic + "?")
-    prompts.append("E. " + summary)
+    prompts.append(QUESTION_PREFIX + "What is " + topic + "?")
+    prompts.append(EXPLANATION_PREFIX + summary)
     logging.info("Prompts after wikipedia: " + "  \n".join(prompts))
 
 
@@ -130,7 +119,7 @@ def get_wikipedia_summary(topic):
 
 def question_is_detailed(question):
     request = copy.deepcopy(details.array)
-    request.append("Q. " + question)
+    request.append(QUESTION_PREFIX + question)
     response = execute_gpt3_request(request, gpt3_details_options, "Detailed?")
     return response == "Yes"
 
